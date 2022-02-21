@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My VideoPlayer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="player">
-        <video class="video" src='https://vod-progressive.akamaized.net/exp=1645455570~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1846%2F15%2F384234040%2F1615284588.mp4~hmac=db477a671968da183644a6f7dfab280a0dc8410e31aa7c9d8d1244d3ec2c2dc8/vimeo-prod-skyfire-std-us/01/1846/15/384234040/1615284588.mp4?filename=New+York+-+30978.mp4' playsinline></video>
-        <div class="show-controls">
-            <div class="controls-container">
-                <div class="progress-range" title="Seek">
-                    <div class="progress-bar"></div>
+      <video
+        class="video"
+        src="https://vod-progressive.akamaized.net/exp=1645483849~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3524%2F5%2F142621375%2F428355935.mp4~hmac=fec8648c4dfc8913274d77dade415243d9c3b6bace94d4032fb65ffc75ef54b1/vimeo-prod-skyfire-std-us/01/3524/5/142621375/428355935.mp4?filename=New+York+City+-+1044.mp4"
+        playsinline
+      ></video>
+      <div class="show-controls">
+        <div class="controls-container">
+          <div class="progress-range" title="Seek">
+            <div class="progress-bar"></div>
+          </div>
+          <div class="control-group">
+            <div class="controls-left">
+              <div class="play-controls">
+                <i class="fas fa-play" title="Play" id="play-btn"></i>
+              </div>
+              <div class="volume">
+                <div class="volume-icon">
+                  <i class="fas fa-volume-up" title="Mute" id="volume-icon"></i>
                 </div>
-                <div class="control-group">
-                    <div class="controls-left">
-                        <div class="play-controls">
-                            <i class="fas fa-play" title="Play" id="play-btn"></i>
-                        </div>
-                        <div class="volume">
-                            <div class="volume-icon">
-                                <i class="fas fa-volume-up" title="Mute" id="volume-icon"></i>
-                            </div>
-                            <div class="volume-range" title="Change Volume">
-                                <div class="volume-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="controls-right">
-                        <div class="speed" title="Playback Rate">
-                            <select name="playbackRate" class="player-speed">
-                                <option value="0.5">0.5 x</option>
-                                <option value="0.75">0.75 x</option>
-                                <option value="1" selected>1.0 x</option>
-                                <option value="1.5">1.5 x</option>
-                                <option value="2">2.0 x</option>
-                            </select>
-                        </div>
-                        <div class="time">
-                            <span class="time-elapsed">00:00 / </span>
-                            <span class="time-duration">00:22</span>
-                        </div>
-                        <div class="fullscreen">
-                            <i class="fas fa-expand"></i>
-                        </div>
-                    </div>
+                <div class="volume-range" title="Change Volume">
+                  <div class="volume-bar"></div>
                 </div>
+              </div>
             </div>
+            <div class="controls-right">
+              <div class="speed" title="Playback Rate">
+                <select name="playbackRate" class="player-speed">
+                  <option value="0.5">0.5 x</option>
+                  <option value="0.75">0.75 x</option>
+                  <option value="1" selected>1.0 x</option>
+                  <option value="1.5">1.5 x</option>
+                  <option value="2">2.0 x</option>
+                </select>
+              </div>
+              <div class="time">
+                <span class="time-elapsed">00:00 / </span>
+                <span class="time-duration">00:22</span>
+              </div>
+              <div class="fullscreen">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
